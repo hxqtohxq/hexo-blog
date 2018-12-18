@@ -6,7 +6,7 @@ title: 记一次从hs_err_log中的codecache学习
 ### 分析
 每次服务器死掉之后，都会生成hs_err_pidxxx文件,默认情况下，这个文件会产生在工作目录下。但是可以在Java启动参数通过下面的设置来改变这个文件的位置和命名规则。
 
-``` bash
+```
 java -XX:ErrorFile=/var/log/java/java_error_%p.log
 ```
 
